@@ -1,1 +1,8 @@
+public class Class1 {
+    public static void main(String[]args){
+        // PRINT STATEMENTS
+        System.out.println("Hello PW");
+        System.out.println("Hello CW");
+    }
+}
 
