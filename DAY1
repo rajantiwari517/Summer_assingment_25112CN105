@@ -1,8 +1,60 @@
-public class Class1 {
-    public static void main(String[]args){
-        // PRINT STATEMENTS
-        System.out.println("Hello PW");
-        System.out.println("Hello CW");
+//programm to calculate sum of first n natural no.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       int ans=0;
+       for(int i=1;i<=n;i++){
+           ans=ans+i;
+       }
+       System.out.println(ans);
+    }
+}
+
+
+
+//programm to print multiplication table of a given no.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       for(int i=1;i<=10;i++){
+           System.out.println(n*i);
+       }
+    }
+}
+
+
+
+//programm to find factorial of a number.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       int ans=n;
+       for(int i=n-1;i>1;i--){
+           ans=ans*i;
+       }
+       System.out.println(ans);
+    }
+}
+
+
+//programm to count digits in a no.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       int count=0;
+       while(n>1){
+           n=n/10;
+           count++;
+       }
+       System.out.println(count);
     }
 }
 
