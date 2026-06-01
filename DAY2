@@ -1,1 +1,89 @@
+//programm to find a sum of a digit .
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in); 
+       System.out.println("write the value");
+       int n=sc.nextInt();
+       int total=0;
+       while(n>0){
+           int r=n%10;
+           n=n/10;
+           
+           total=total+r;
+       }
+       System.out.println(total);
+    }
+}
 
+
+
+//program to reverse a no.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in); 
+       System.out.println("write the value of n");
+      int n=sc.nextInt();
+      int reverse=0;
+      while(n>0){
+          int r=n%10;
+          n=n/10;
+          reverse=(reverse*10)+r;
+      }
+      System.out.println(reverse);
+    }
+}
+
+
+
+
+
+
+
+//program to find product of a digit.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in); 
+       System.out.println("write the value of n");
+       int n=sc.nextInt();
+       int product_of_digits=1;
+       while(n>0){
+           int r=n%10;
+           n=n/10;
+           product_of_digits=product_of_digits*r;
+       }
+       System.out.println( product_of_digits);
+    
+    }
+}
+
+
+
+
+
+//program to check whether a no is pelindrome.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in); 
+       System.out.println("write the value of n");
+       int n=sc.nextInt();
+       int no=n;
+      int reverse=0;
+      while(n>0){
+          int r=n%10;
+          n=n/10;
+          reverse=(reverse*10)+r;
+      }
+      if(reverse==no){
+          System.out.println("it is a palindrome");
+      }
+      else{
+          System.out.println("it is not a palindrome");
+      }
+     
+    
+    }
+}
