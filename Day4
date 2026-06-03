@@ -1,0 +1,102 @@
+//programm to generate fibbonaci series.
+import java.util.Scanner;
+  public class practice {
+   public static void main(String[] args) {
+     int a=0;
+     int b=1;
+     int ans;
+     for(int i=3;i<10;i++){
+        ans=a+b;
+        a=b;
+        b=ans;
+        System.out.print(ans+" ");
+     }
+
+       
+        }
+    
+  }
+
+
+
+
+//programm to find nth fibbonacy term.
+import java.util.Scanner;
+  public class practice {
+   public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+     int a=0;
+     int b=1;
+     int ans=0;
+     if(n==1)ans=0;
+     if(n==2)ans=2;
+     for(int i=3;i<=n;i++){
+        ans=a+b;
+        a=b;
+        b=ans;
+        
+     }
+      System.out.println(ans);
+       
+        }
+    
+  }
+
+
+
+
+//programm to check armstrong no.
+import java.util.Scanner;
+  public class practice {
+   public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int arm=0;
+    int r;
+    int fn=n;
+    while(fn!=0){
+        r=fn%10;
+        arm=arm+(r*r*r);
+        fn=fn/10;
+
+
+    }
+    if(arm==n)System.out.println("yes it is a armstirong no");
+    else {
+        System.out.println("no it is not a armstrong no");
+    }
+       
+        }
+    
+  }
+
+
+
+
+
+
+//programm to print armstrong no in a range,
+import java.util.Scanner;
+  public class practice {
+   public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int x=sc.nextInt();
+    for(int n=1;n<=x;n++){
+     int arm=0;
+    int r;
+    int fn=n;
+    while(fn!=0){
+        r=fn%10;
+        arm=arm+(r*r*r);
+        fn=fn/10;
+
+
+    }
+    if(arm==n)System.out.print(n+" ");
+   
+    }
+       
+        }
+    
+  }
