@@ -1,0 +1,105 @@
+//programm to find a no is perfect or not.
+import java.util.Scanner;
+  public class practice {
+   public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int x=sc.nextInt();
+    
+    int total=0;
+    for(int i=1;i<x;i++){
+        if(x%i==0){
+            total=total+i;
+        }
+    }
+    if(total==x){
+        System.out.println("it is a perfect no");
+
+    }
+    else{
+        System.out.println("it is not a perfect no");
+    }
+       
+        }
+    
+  }
+
+
+
+
+//programm to find a no is string no or not.
+import java.util.Scanner;
+  public class practice {
+   public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int x=sc.nextInt();
+    int r;
+    int t=x;
+    int total=0;
+    int total2=1;
+    while(t!=0){
+     r=t%10;
+     total2=1;
+      for(int i=1;i<=r;i++){
+        total2=total2*i;
+      }
+      total=total+total2;
+      t=t/10;
+
+    }
+    if(total==x)System.out.println("it is a strong no");
+    else{
+        System.out.println("it is not a strong no");
+    }
+   
+       
+        }
+    
+  }
+
+
+
+//programm to print factors of a no.
+import java.util.Scanner;
+  public class practice {
+   public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int x=sc.nextInt();
+    for(int i=1;i<=x;i++){
+        if(x%i==0)System.out.print(i+" ");
+    }
+   
+       
+        }
+    
+  }
+
+import java.util.Scanner;
+
+public class practice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();
+        int primefactor = 0;
+
+        for (int i = 2; i <= x; i++) {
+            if (x % i == 0) {
+
+                boolean prime = true;
+
+                for (int a = 2; a < i; a++) {
+                    if (i % a == 0) {
+                        prime = false;
+                        break;
+                    }
+                }
+
+                if (prime) {
+                    primefactor = i;
+                }
+            }
+        }
+
+        System.out.println(primefactor);
+    }
+}
