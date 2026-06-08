@@ -1,0 +1,119 @@
+//program to recursive factorial;
+import java.util.Scanner;
+
+public class practice {
+  public static int factorial(int x,int ans){
+    if(x==0)return ans;
+      else{ans=ans*x;
+      x--;
+      ans=factorial(x, ans);
+      return ans;}
+      
+  }
+ 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+        int ans;
+        if(x==0)ans=0;
+        else{ans=1;}
+        ans=factorial(x,ans);
+        System.out.println(ans);
+
+    
+       
+    }
+}
+
+
+
+//program to find recursive fibbonacy;
+import java.util.Scanner;
+
+public class practice {
+  public static void fibbonacy(int a,int b,int x){
+    if(x==0)return ;
+      System.out.print(a+b +" ");
+      int temp=b;
+      b=a+b;
+      a=temp;
+      x--;
+      fibbonacy(a, b, x);
+    
+  }
+  
+ 
+ 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+      if(x==1)System.out.println("0");
+      else if(x==2)System.out.println("0,1");
+      else{
+        System.out.print(0+" ");
+        System.out.print(1+" ");
+        fibbonacy(0,1,x-2);
+      }
+
+    
+       
+    }
+}
+
+//program to recursive sum of digits;
+import java.util.Scanner;
+
+public class practice {
+  public static int sum(int x,int ans){
+  if(x==0)return ans;
+  else{int r=x%10;
+  x=x/10;
+  ans=ans+r;
+  ans=sum(x,ans);
+  return ans;}
+  }
+  
+ 
+ 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+     int ans=0;
+     ans=sum(x,ans);
+     System.out.println(ans);
+
+    
+       
+    }
+}
+
+
+
+//program to recursive reverse no;
+import java.util.Scanner;
+
+public class practice {
+  public static int sum(int x,int ans){
+  if(x==0)return ans;
+  else{int r=x%10;
+  x=x/10;
+  ans=(ans*10)+(r);
+ 
+  ans=sum(x,ans);
+  return ans;}
+  }
+  
+ 
+ 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+     int ans=0;
+   
+     ans=sum(x,ans);
+     System.out.println(ans);
+
+    
+       
+    }
+}
