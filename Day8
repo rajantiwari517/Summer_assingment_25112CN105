@@ -1,0 +1,90 @@
+//program to print star pyramind;
+import java.util.Scanner;
+
+public class practice {
+ 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        for(int x=0;x<a;x++){
+          for(int y=0;y<x;y++){
+            System.out.print("*");
+          }
+          System.out.println();
+        }
+    
+    
+       
+    }
+}
+
+
+
+//program to print number triangle;
+
+
+public class practice {
+ 
+    public static void main(String[] args) {
+      
+        int a=6;
+        for(int x=0;x<a;x++){
+          for(int y=0;y<x;y++){
+            System.out.print(y+1);
+          }
+          System.out.println();
+        }
+    
+    
+       
+    }
+}
+//program to print character triangle;
+
+
+public class practice {
+ 
+    public static void main(String[] args) {
+      
+        int a=6;
+        for(int x=0;x<a;x++){
+          char ans='A';
+          for(int y=0;y<x;y++){
+            System.out.print(ans);
+            ans++;
+          }
+          System.out.println();
+        }
+    
+    
+       
+    }
+}
+
+
+
+
+
+
+//program to print number triangle;
+
+
+public class practice {
+ 
+    public static void main(String[] args) {
+      
+        int a=6;
+        for(int x=0;x<a;x++){
+          for(int y=0;y<x;y++){
+            System.out.print(y+1);
+          }
+          System.out.println();
+        }
+    
+    
+       
+    }
+}
+   
+    
+   
