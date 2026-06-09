@@ -1,0 +1,96 @@
+//program to print reverse star pattern;
+
+
+public class practice {
+ 
+    public static void main(String[] args) {
+      
+        int a=6;
+        for(int x=0;x<a;x++){
+        
+          for(int y=a-1;y>=x;y--){
+            System.out.print("*");
+          
+          }
+          System.out.println();
+        }
+    
+    
+       
+    }
+}
+   
+//program to print reverse no triangle;
+
+
+public class practice {
+ 
+    public static void main(String[] args) {
+      
+        int a=6;
+        for(int x=0;x<a;x++){
+            int ans=1;
+          for(int y=a-1;y>=x;y--){
+            System.out.print(ans);
+          ans++;
+          }
+          System.out.println();
+        }
+    
+    
+       
+    }
+}
+   
+//program to print repeted char pattern;
+
+
+public class practice {
+ 
+    public static void main(String[] args) {
+      
+        int a=5;
+        char ans='A';
+        for(int x=0;x<a;x++){
+          
+         for(int y=0;y<=x;y++){
+            System.out.print(ans);
+          
+          }
+          ans++;
+          System.out.println();
+        }
+    
+    
+       
+    }
+}
+//program to print hollow squar pattern;
+
+
+public class practice {
+ 
+    public static void main(String[] args) {
+      
+        int a=5;
+        
+        for(int x=0;x<a;x++){
+          
+         for(int y=0;y<a;y++){
+            if(x==0||x==a-1||y==0||y==a-1){
+              System.out.print("*");
+            }
+            else{
+              System.out.print(" ");
+            }
+          
+          }
+         
+          System.out.println();
+        }
+    
+    
+       
+    }
+}
+   
