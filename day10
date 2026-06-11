@@ -1,0 +1,79 @@
+//program to print star pyramid;
+public class practice {
+ public static void main(String[] args) {
+     int a=5;
+     for(int i=1;i<=a;i++){
+         for(int j=a;j>i;j--){
+         System.out.print(" ");
+         }for(int j=1;j<=i;j++){
+          System.out.print("*");
+         }
+         for(int j=2;j<=i;j++){
+          System.out.print("*");
+         }
+         System.out.println();
+     }
+    }
+}
+//program to print reverse star pyramid;
+public class practice {
+ public static void main(String[] args) {
+     int a=5;
+     for(int i=1;i<=a;i++){
+         for(int j=2;j<=i;j++){
+         System.out.print(" ");
+         }for(int j=a-i+1;j>=1;j--){
+          System.out.print("*");
+         }
+         for(int j=a-i;j>=1;j--){
+          System.out.print("*");
+         }
+     
+         System.out.println();
+     }
+    }
+}
+//program to print number pyramid;
+public class practice {
+ public static void main(String[] args) {
+     int a=5;
+     for(int i=1;i<=a;i++){
+         for(int j=a;j>i;j--){
+         System.out.print(" ");
+         }for(int j=1;j<=i;j++){
+          System.out.print(j);
+         }
+         for(int j=i-1;j>=1;j--){
+          System.out.print(j);
+         }
+         System.out.println();
+     }
+    }
+}
+//program to print alphabetic  pyramid;
+public class practice {
+ public static void main(String[] args) {
+     int a=5;
+     for(int i=1;i<=a;i++){
+         for(int j=a;j>i;j--){
+         System.out.print(" ");
+         
+         }
+         char one='A';
+         for(int j=1;j<=i;j++){
+          System.out.print(one);
+          one++;
+         }char two='A';
+          for(int x=1;x<=i-2;x++){
+            two++;
+          }
+         for(int j=i-1;j>=1;j--){
+         
+          System.out.print(two);
+          two--;
+         }
+         System.out.println();
+     }
+    }
+}
+   
