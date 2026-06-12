@@ -1,0 +1,83 @@
+//write a program to write function of find sum of two numbers.
+import java.util.Scanner;
+public class practice {
+    public static int sum(int a,int b){
+        int ans=a+b;
+        return ans;
+    }
+ public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     int a=sc.nextInt();
+     int b=sc.nextInt();
+     System.out.println(sum(a,b));
+     }
+    }
+
+
+
+
+
+//write a program to write function to find maximum.
+import java.util.Scanner;
+public class practice {
+    public static int max(int a,int b){
+        int ans=Math.max(a, b);
+        return ans;
+    }
+ public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     int a=sc.nextInt();
+     int b=sc.nextInt();
+     System.out.println(max(a,b));
+     }
+    }
+
+
+
+
+
+
+//write a program to write function to check prime.
+import java.util.Scanner;
+public class practice {
+    public static boolean prime(int a){
+
+       for(int i=2;i<a;i++){
+          if((a%i)==0)return false;
+       }
+       return true;
+    }
+ public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     int a=sc.nextInt();
+     
+     System.out.println("it is prime:"+prime(a));
+     }
+    }
+
+
+
+
+//write a program to write function to find factorial.
+import java.util.Scanner;
+public class practice {
+    public static int factorial(int ans,int a){
+        if(a==1){return ans;}
+     ans=ans*a;
+     a--;
+     ans=factorial(ans, a);
+    
+     return ans;
+
+       
+    }
+ public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     int a=sc.nextInt();
+     int ans=1;
+     ans=factorial(ans,a);
+     System.out.println(ans);
+     
+    
+     }
+    }
