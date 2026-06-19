@@ -1,0 +1,79 @@
+//write a program to linear search.
+import java.util.Scanner;
+public class practice {
+   
+ public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     System.out.println("write the length of an array");
+     int a=sc.nextInt();
+     int[] arr=new int[a];
+     for(int i=0;i<a;i++){
+        arr[i]=sc.nextInt();
+     }
+     System.out.println("which element you want to find");
+     int x=sc.nextInt();
+    for(int i=0;i<a;i++){
+       if(x==arr[i]){
+        System.out.println("the element is at:"+i);
+        break;
+       }
+    }
+
+    
+  
+       
+     }
+    }
+
+   
+//write a program to find frequency of an element.
+import java.util.Scanner;
+public class practice {
+   
+ public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     System.out.println("write the length of an array");
+     int a=sc.nextInt();
+     int[] arr=new int[a];
+     for(int i=0;i<a;i++){
+        arr[i]=sc.nextInt();
+     }
+     System.out.println("write the element you want to know frequency ");
+     int x=sc.nextInt();
+     int count=0;
+    for(int i=0;i<a;i++){
+       if(x==arr[i]){
+       count++;
+        
+       }
+    }
+    System.out.println(count);
+
+    
+  
+       
+     }
+    }
+//write a program to second largest element in an array.
+import java.util.Scanner;
+public class practice {
+   
+ public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     System.out.println("write the length of an array");
+     int a=sc.nextInt();
+     int[] arr=new int[a];
+     for(int i=0;i<a;i++){
+        arr[i]=sc.nextInt();
+     }
+     int firstlargest =Integer.MIN_VALUE;
+     int secondlargest=Integer.MIN_VALUE;
+     for(int i=0;i<a;i++){
+      if(arr[i]>firstlargest){
+         secondlargest=firstlargest;
+         firstlargest=arr[i];
+      }
+     }
+     System.out.println(secondlargest);
+     }
+    }
